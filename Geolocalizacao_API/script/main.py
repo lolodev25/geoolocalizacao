@@ -13,13 +13,10 @@ df_ubs_brasil = gpd.read_file(
     "C:/Users/user/.vscode/Geolocalizacao_API/dataframes/UBS_BRASIL.geojson"
 )
 
-
-
 #modelo para visualizar os dados
 class VisualizaPoint(BaseModel):
     id: int
     coordenadas: tuple
-
 
 #visualizar os pontos
 @app.get("/pontos_base/", response_model=list[VisualizaPoint])
