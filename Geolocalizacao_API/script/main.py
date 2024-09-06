@@ -2,9 +2,7 @@ import geopandas as gpd
 from shapely.geometry import Point, shape
 from pydantic import BaseModel
 from fastapi import FastAPI
-import matplotlib.pyplot as plt
-from io import BytesIO
-from fastapi.responses import FileResponse
+
 
 app = FastAPI()
 
