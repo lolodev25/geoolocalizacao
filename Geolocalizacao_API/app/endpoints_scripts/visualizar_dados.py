@@ -29,7 +29,7 @@ def pegar_pontos_base():
     return StreamingResponse(
         buffer,
         media_type="text/json",
-        headers={"Content-Disposition": "attachment; filename=pontos_base.json"},
+        headers={"Content-Disposition": "attachment; filename=pontos_base.geojson"},
     )
 
 
