@@ -1,7 +1,7 @@
 from fastapi import APIRouter
-from app.modelo_dados import VisualizaPoint
+from Geolocalizacao_API.app.modelo_dados import VisualizaPoint
 from shapely.geometry import Point, shape
-from app.funcoes_auxiliares.geo_data import carregar_malha, carregar_ubs
+from Geolocalizacao_API.app.funcoes_auxiliares.geo_data import carregar_ubs
 import pandas as pd
 from fastapi.responses import StreamingResponse
 import io
@@ -31,3 +31,5 @@ def pegar_pontos_base():
         media_type="text/json",
         headers={"Content-Disposition": "attachment; filename=pontos_base.json"},
     )
+
+

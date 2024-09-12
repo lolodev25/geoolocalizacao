@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
-from app.funcoes_auxiliares.geo_data import carregar_ubs, carregar_malha
-
+from Geolocalizacao_API.app.funcoes_auxiliares.geo_data import carregar_ubs, carregar_malha
 
 def plot_ubs(buffer):
     df_brmalhaubs = carregar_malha()

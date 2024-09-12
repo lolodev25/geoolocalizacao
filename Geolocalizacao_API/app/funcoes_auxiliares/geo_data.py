@@ -1,13 +1,10 @@
 import geopandas as gpd
 
-
 def carregar_ubs():
-    return gpd.read_file(
-        "C:/Users/user/.vscode/Geolocalizacao_API/dataframes/UBS_BRASIL.geojson"
-    )
+    url_ubs = 'https://raw.githubusercontent.com/lolodev25/base_dados/main/UBS_BRASIL.geojson'
 
+    return gpd.read_file(url_ubs)
 
 def carregar_malha():
-    return gpd.read_file(
-        "C:/Users/user/.vscode/Geolocalizacao_API/dataframes/BRMALHAUBS.geojson"
-    )
+    url_malha = 'https://raw.githubusercontent.com/lolodev25/base_dados/main/BRMALHAUBS.geojson'
+    return gpd.read_file(url_malha)
